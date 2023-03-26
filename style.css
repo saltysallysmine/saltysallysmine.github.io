@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 5%;
+    /* background-color: #3f3f37; */
+    background-color: #D1D1CF;
+}
+
+.grid-container {
+    --gap-size: 15px;
+    --num-cols: 3;
+    --row-height: 700px;
+    box-sizing: border-box;
+    padding: var(--gap-size);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap-size);
+}
+
+.grid-container__image__two-column {
+    grid-column: span 2;
+}
+
+.grid-container__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 70px;
+}
