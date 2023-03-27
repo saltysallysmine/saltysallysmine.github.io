@@ -5,7 +5,7 @@ body {
 .grid-container {
     --gap-size: 15px;
     --num-cols: 4;
-    --row-height: 500px;
+    --row-height: 450px;
     /* --radius: 60px; */
     box-sizing: border-box;
     padding: var(--gap-size);
@@ -16,6 +16,12 @@ body {
     margin: 20px;
 }
 
+@media (max-width: 800px) {
+    .grid-container {
+        --num-cols: 2;
+        --row-height: 300px;
+    }
+}
 .grid-section {
     display: flex;
     justify-content: center;
@@ -37,9 +43,9 @@ body {
 
 .grid-section__label {
     position: absolute;
-    background-color: white;
-    padding: 10%;
-    font-size: 40px;
+    background-color: rgba(253, 253, 251, 0.8);
+    padding: 10% 20% 10% 20%;
+    font-size: 25px;
     transition: transform 0.5s;
     transform-origin: right;
     transform: scaleX(0);

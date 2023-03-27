@@ -39,3 +39,8 @@ a>img {
 a:hover {
     transform: translateY(-5px);
 }
+
+.social-media-links__label {
+    text-align: center;
+    padding-bottom: 20px;
+}
