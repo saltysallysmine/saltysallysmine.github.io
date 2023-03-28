@@ -45,7 +45,7 @@ body {
 .grid-section__label {
     position: absolute;
     background-color: rgba(253, 253, 251, 0.8);
-    padding: 10% 20% 10% 20%;
+    padding: 10% 10% 10% 10%;
     font-size: 25px;
     transition: transform 0.5s;
     transform-origin: right;
