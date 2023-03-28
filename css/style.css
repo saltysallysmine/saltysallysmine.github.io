@@ -22,6 +22,7 @@ body {
         --row-height: 300px;
     }
 }
+
 .grid-section {
     display: flex;
     justify-content: center;

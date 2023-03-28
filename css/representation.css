@@ -20,7 +20,7 @@
     transform: translateX(-5px) translateY(-5px);
 }
 
-.info-container__item > img {
+.info-container__item > picture > img {
     display: inline-block;
     width: 100%;
     height: 100%;
