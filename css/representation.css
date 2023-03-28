@@ -16,9 +16,9 @@
     box-sizing: content-box;
 }
 
-.info-container__item:hover {
+/* .info-container__item:hover {
     transform: translateX(-5px) translateY(-5px);
-}
+} */
 
 .info-container__item > picture > img {
     display: inline-block;
