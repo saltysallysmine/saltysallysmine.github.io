@@ -1,37 +1,37 @@
 body {
-    /* body */
-    --background-body-color-light: #F6FFF8; 
-    --background-body-color-dark: #2A2438; 
-    /* content */
-    --background-content-color-light: #F6FFF8; 
-    --background-content-color-dark: #5C5470; 
-    /* footer */
-    --background-footer-color-light: #CCE3DE; 
-    --background-footer-color-dark: #352F44; 
-    /* label */
-    --background-label-color-light: rgba(253, 253, 251, 0.8); 
-    --background-label-color-dark: rgba(92, 84, 112, 0.8);
-    /* body */
-    --text-color-light: black;
-    --text-color-dark: white;
-    /* for grid container */
-    --gap-size: 15px;
-    --num-cols: 3;
-    --row-height: 300px;
-    /* Current using colors. Additional theme is light */
-    --text-color: var(--text-color-dark);
-    --border-color: #272D2D;
-    --background-body-color: var(--background-body-color-dark);
-    --background-footer-color: var(--background-footer-color-dark);
-    --background-content-color: var(--background-content-color-dark); 
-    --background-label-color: var(--background-label-color-dark);
+  /* body */
+  --background-body-color-light: #F6FFF8; 
+  --background-body-color-dark: #2A2438; 
+  /* content */
+  --background-content-color-light: #F6FFF8; 
+  --background-content-color-dark: #5C5470; 
+  /* footer */
+  --background-footer-color-light: #CCE3DE; 
+  --background-footer-color-dark: #352F44; 
+  /* label */
+  --background-label-color-light: rgba(253, 253, 251, 0.8); 
+  --background-label-color-dark: rgba(92, 84, 112, 0.8);
+  /* body */
+  --text-color-light: black;
+  --text-color-dark: white;
+  /* for grid container */
+  --gap-size: 15px;
+  --num-cols: 3;
+  --row-height: 300px;
+  /* Current using colors. Additional theme is light */
+  --text-color: var(--text-color-dark);
+  --border-color: #272D2D;
+  --background-body-color: var(--background-body-color-dark);
+  --background-footer-color: var(--background-footer-color-dark);
+  --background-content-color: var(--background-content-color-dark); 
+  --background-label-color: var(--background-label-color-dark);
 }
 
 @media (max-width: 800px) {
-    .grid-container {
-        --num-cols: 2;
-        --row-height: 300px;
-    }
+  .grid-container {
+    --num-cols: 2;
+    --row-height: 300px;
+  }
 }
 
 /* TODO: text selection color */
