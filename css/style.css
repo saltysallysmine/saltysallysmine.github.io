@@ -136,6 +136,30 @@ body {
   animation: expand-and-center var(--animation-duration) ease;
 }
 
+.lightbox-button-prev-image--opened {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url('/src/img/png/arrow-left.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  left: 0;
+  top: 45vh;
+}
+
+.lightbox-button-next-image--opened {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url('/src/img/png/arrow-left.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  left: calc(100vw - 200px);
+  top: 45vh;
+}
+
 /* ------------------------------------------------------------------------- */
 /* Section. Representation styles */
 
