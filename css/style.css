@@ -13,6 +13,19 @@ body {
   margin: 15px auto;
 }
 
+@media(max-width: 800px) {
+
+  .content {
+    border: none;
+    width: 100vw;
+  }
+
+  .gallery {
+    width: 100vw;
+  }
+
+}
+
 .grid-container {
   /* --radius: 60px; */
   box-sizing: border-box;

@@ -31,7 +31,7 @@ body {
 @media (max-width: 800px) {
   .grid-container {
     --num-cols: 2;
-    --row-height: 300px;
+    --row-height: 270px;
   }
 }
 
