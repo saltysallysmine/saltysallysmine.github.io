@@ -30,6 +30,12 @@ body {
   margin: 20px;
 }
 
+.grid-container--full-page {
+  grid-auto-rows: var(--row-height-full-screen);
+  grid-template-columns: repeat(var(--num-cols-full-screen), 1fr);
+}
+
+
 .grid-section {
   display: flex;
   justify-content: center;
@@ -40,6 +46,10 @@ body {
   overflow: hidden;
   border-style: solid;
   border-color: #272D2D;
+}
+
+.grid-section--rounded {
+  border-radius: 50px;
 }
 
 .grid-section__image {
@@ -70,7 +80,6 @@ body {
 .grid-section__two-column {
   grid-column: span 2;
 }
-
 
 /* ------------------------------------------------------------------------- */
 /* Section. Popup image styles */
@@ -168,9 +177,6 @@ body {
   display: block;
   width: 200px;
   height: 200px;
-  background-image: url('/src/img/png/arrow-left.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: absolute;
   left: 0;
   top: 45vh;
@@ -185,9 +191,6 @@ body {
   display: block;
   width: 200px;
   height: 200px;
-  background-image: url('/src/img/png/arrow-left.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: absolute;
   left: calc(100vw - 200px);
   top: 45vh;
@@ -220,10 +223,47 @@ body {
 /* ------------------------------------------------------------------------- */
 /* Section. Representation styles */
 
+#representation>.grid-section {
+  border: none;
+}
+
+.representation-text {
+  background-color: var(--background-card-color-light);
+  border-radius: 50px;
+  text-align: justify;
+  padding: 30px;
+  font-style: italic;
+}
+
+.representation-text-quotation {
+  font-size: 2em;
+  padding: 0 40px;
+}
+
+.representation-text-author {
+  font-size: 1.7em;
+  text-align: right;
+}
+
+@media(max-width: 800px) {
+  .representation-text-quotation {
+    font-size: 1.5em;
+    padding: 0;
+  }
+  .representation-text-author {
+    font-size: 1em;
+  }
+}
+
 .title-block {
   margin: 35px;
   padding: 10px;
   border-bottom: solid;
+}
+
+.divider {
+  margin: 35px;
+  border-bottom: 2px solid;
 }
 
 .info-container {

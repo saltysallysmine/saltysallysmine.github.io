@@ -1,3 +1,5 @@
+/* TODO: text selection color */
+
 body {
   /* body */
   --background-body-color-light: #F6FFF8; 
@@ -5,6 +7,9 @@ body {
   /* content */
   --background-content-color-light: #F6FFF8; 
   --background-content-color-dark: #787684; 
+  /* cards */
+  --background-card-color-light: #eaf4f4;
+  --background-card-color-dark: #9a8c98;
   /* footer */
   --background-footer-color-light: #CCE3DE; 
   --background-footer-color-dark: #4a4e69; 
@@ -17,7 +22,9 @@ body {
   /* for grid container */
   --gap-size: 15px;
   --num-cols: 3;
+  --num-cols-full-screen: 4;
   --row-height: 300px;
+  --row-height-full-screen: 70vh;
   --animation-duration: 1s;
   /* Current using colors. Additional theme is dark */
   --text-color: var(--text-color-light);
@@ -35,4 +42,9 @@ body {
   }
 }
 
-/* TODO: text selection color */
+@media (max-width: 1200px) {
+  .grid-container--full-page {
+    --num-cols-full-screen: 2;
+    --row-height-full-screen: 40vh;
+  }
+}

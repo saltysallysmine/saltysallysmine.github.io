@@ -33,39 +33,30 @@
     <div class="content">
 
       <div class="title-block">
-        <h1>Peter Lutov</h1>
+        <h1>Лутов Пётр</h1>
       </div>
 
-      <div class="representation-block">
-        <ul class="info-container">
-          <li class="info-container__item">
-            <picture>
-              <source media="(max-width: 800px)" srcset="src/img/webp/painting_50_2_372x350.webp">
-              <source media="(min-width: 800px)" srcset="src/img/webp/painting_50.webp">
-              <img src="src/img/jpg/painting_50.jpg" alt="Peter Lutov is painting">
+      <!-- Section. Representation -->
+      <div class="representation grid-container grid-container--full-page" id="representation">
+        <section class="grid-section grid-section__two-column">
+          <div class="representation-text">
+            <p class="representation-text-quotation">Написанная от руки буква, в отличие от напечатанной, передаёт индивидуальность, характер и душевное состояние пишущего. Так и иллюстрация, исполненная традиционными материалами, в отличие от цифровой, хранит отпечаток автора и момента.</p>
+            <br />
+            <p class="representation-text-author">Пётр Лутов. Дизайнер и иллюстратор</p>
+          </div>
+        </section>
+        <section class="grid-section grid-section__two-column grid-section--rounded">
+          <a class="gallery-item" href="./src/img/jpg/representation.jpg" >
+            <picture class="grid-section__image">
+              <source srcset="./src/img/jpg/representation.jpg">
+              <img class="grid-section__image" src="./src/img/jpg/representation.jpg" alt="photos">
             </picture>
-            <p><b>Дизайнер</b></p>
-          </li>
-          <li class="info-container__item">
-            <picture>
-              <source media="(max-width: 800px)" srcset="src/img/webp/peter_lutov_portrait_50_2_372x350.webp">
-              <source media="(min-width: 800px)" srcset="src/img/webp/peter_lutov_portrait_50.webp">
-              <img src="src/img/jpg/peter_lutov_portrait_50.jpg" alt="Peter Lutov portrait">
-            </picture>
-            <p><b>Иллюстратор</b></p>
-          </li>
-          <li class="info-container__item">
-            <picture>
-              <source media="(max-width: 800px)" srcset="src/img/webp/crop_painting_50_2_372x350.webp">
-              <source media="(min-width: 800px)" srcset="src/img/webp/crop_painting_50.webp">
-              <img src="src/img/jpg/crop_painting_50.jpg" alt="Peter Lutov is painting">
-            </picture>
-            <p><b>Пётр</b></p>
-          </li>
-        </ul>
+          </a>
+        </section>
       </div>
 
-      <div class="grid-container">
+      <!-- Section. Gallery -->
+      <div class="grid-container" id="gallery">
         <section class="grid-section grid-section__two-column">
           <a class="gallery-item" href="/src/img/jpg/7.jpg" >
           <picture class="grid-section__image">
@@ -159,6 +150,7 @@
 
     </div>
 
+    <!-- Section. Footer -->
     <footer>
       <div class="feedback-form-link-container">
         <a href="#">Contact us!</a>
@@ -188,6 +180,7 @@
       </div>
     </footer>
 
+    <!-- Section. Popup image container -->
     <div class="popup-container" id="image-preview">
       <div class="popup" id="lightbox">
         <div class="popup-buttons">
@@ -199,6 +192,7 @@
       </div>
     </div>
 
+    <!-- Section. Popup feedback form container -->
     <div class="popup-container feedback-form-container--closed" id="feedback-form">
       <div class="popup">
         <div class="popup-form-container">

@@ -8,7 +8,7 @@ let popupButtonNext = popupButtons.querySelector(".lightbox-button-next");
 let popupOpened = false;
 let currentIndex = null;
 
-let imgItems = document.querySelectorAll(".gallery-item");
+let imgItems = document.querySelectorAll("#gallery>*>.gallery-item");
 let imgHrefs = [];
 imgItems.forEach(link => { imgHrefs.push(link.href); });
 
