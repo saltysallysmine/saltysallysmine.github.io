@@ -228,7 +228,7 @@ body {
 }
 
 .representation-text {
-  background-color: var(--background-card-color-light);
+  background-color: var(--background-card-color);
   border-radius: 50px;
   text-align: justify;
   padding: 30px;
