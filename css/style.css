@@ -7,8 +7,6 @@ body {
 
 .content {
   background-color: var(--background-content-color);
-  border-radius: 5px;
-  border: solid var(--border-color);
   max-width: 80vw;
   margin: 15px auto;
 }
