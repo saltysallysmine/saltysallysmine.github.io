@@ -19,19 +19,6 @@ body {
     border: none;
     width: 100vw;
   }
-
-  .gallery {
-    width: 100vw;
-  }
-
-  .lightbox-button-prev-image--opened {
-    bottom: 10px;
-  }
-
-  .lightbox-button-next-image--opened {
-    bottom: 10px;
-  }
-
 }
 
 .grid-container {
@@ -135,6 +122,12 @@ body {
   text-align: center;
 }
 
+@media(max-width: 800px) {
+  .gallery {
+    width: 100vw;
+  }
+}
+
 .popup-container--opened {
   animation: background-shading var(--animation-duration) forwards;
   position: fixed;
@@ -204,6 +197,18 @@ body {
 
 .lightbox-button-next-image--opened:hover {
   animation: background-shading var(--animation-duration) reverse;
+}
+
+@media(max-width: 800px) {
+
+  .lightbox-button-prev-image--opened {
+    top: calc(100vh - 200px);
+  }
+
+  .lightbox-button-next-image--opened {
+    top: calc(100vh - 200px);
+  }
+
 }
 
 /* ------------------------------------------------------------------------- */
