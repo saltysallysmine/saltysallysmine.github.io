@@ -215,8 +215,17 @@ body {
 /* ------------------------------------------------------------------------- */
 /* Section. Popup feedback form styles */
 
-.feedback-form-container--closed {
+.feedback-form-container {
   position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.feedback-form-container--opened {
+  scale: 1;
+}
+
+.feedback-form-container--closed {
   scale: 0;
 }
 
