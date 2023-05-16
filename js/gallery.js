@@ -103,6 +103,18 @@ document.addEventListener('keydown', event => {
   // console.log(keyName);
 });
 
+popupButtonPrev.addEventListener('click', event => {
+  if (popupOpened) {
+    previousPopupImage();
+  }
+});
+
+popupButtonNext.addEventListener('click', event => {
+  if (popupOpened) {
+    nextPopupImage();
+  }
+});
+
 popupBackground.addEventListener('click', event => {
   closePopup();
 });

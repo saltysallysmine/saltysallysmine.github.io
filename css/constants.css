@@ -19,13 +19,13 @@ body {
   --num-cols: 3;
   --row-height: 300px;
   --animation-duration: 1s;
-  /* Current using colors. Additional theme is light */
-  --text-color: var(--text-color-dark);
+  /* Current using colors. Additional theme is dark */
+  --text-color: var(--text-color-light);
   --border-color: #272D2D;
-  --background-body-color: var(--background-body-color-dark);
-  --background-footer-color: var(--background-footer-color-dark);
-  --background-content-color: var(--background-content-color-dark); 
-  --background-label-color: var(--background-label-color-dark);
+  --background-body-color: var(--background-body-color-light);
+  --background-footer-color: var(--background-footer-color-light);
+  --background-content-color: var(--background-content-color-light); 
+  --background-label-color: var(--background-label-color-light);
 }
 
 @media (max-width: 800px) {

@@ -92,6 +92,20 @@ body {
 
 }
 
+@keyframes from-saturation-to-disappearance {
+
+  from {
+    filter: alpha(opacity=100); /* opacity for IE */
+    opacity: 1;
+  }
+
+  to {
+    filter: alpha(opacity=0); /* opacity for IE */
+    opacity: 0
+  }
+
+}
+
 /* Styles */
 
 .gallery {
@@ -111,6 +125,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 
 .popup-background--opened {
   position: absolute;
@@ -137,6 +152,7 @@ body {
 }
 
 .lightbox-button-prev-image--opened {
+  animation: from-saturation-to-disappearance var(--animation-duration) ease forwards;
   display: block;
   width: 200px;
   height: 200px;
@@ -148,7 +164,12 @@ body {
   top: 45vh;
 }
 
+.lightbox-button-prev-image--opened:hover {
+  animation: background-shading var(--animation-duration) reverse;
+}
+
 .lightbox-button-next-image--opened {
+  animation: from-saturation-to-disappearance var(--animation-duration) ease forwards;
   display: block;
   width: 200px;
   height: 200px;
@@ -158,6 +179,10 @@ body {
   position: absolute;
   left: calc(100vw - 200px);
   top: 45vh;
+}
+
+.lightbox-button-next-image--opened:hover {
+  animation: background-shading var(--animation-duration) reverse;
 }
 
 /* ------------------------------------------------------------------------- */
