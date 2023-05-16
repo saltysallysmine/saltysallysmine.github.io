@@ -210,6 +210,14 @@ body {
 }
 
 /* ------------------------------------------------------------------------- */
+/* Section. Popup feedback form styles */
+
+.feedback-form-container--closed {
+  position: absolute;
+  scale: 0;
+}
+
+/* ------------------------------------------------------------------------- */
 /* Section. Representation styles */
 
 .title-block {
@@ -257,6 +265,12 @@ footer {
   --size: 50px;
   background-color: var(--background-footer-color);
   box-sizing: border-box;
+  text-align: center;
+}
+
+.feedback-form-link-container {
+  padding: 20px;
+  font-size: 1.5em;
 }
 
 .links-container {
@@ -296,7 +310,8 @@ footer {
 
 .social-media-links__label {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
 }
 
 

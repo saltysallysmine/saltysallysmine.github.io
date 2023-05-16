@@ -188,13 +188,25 @@
       </div>
     </footer>
 
-    <div class="popup-container">
+    <div class="popup-container" id="image-preview">
       <div class="popup" id="lightbox">
         <div class="popup-buttons">
           <a href="#prev" class="lightbox-button lightbox-button-prev"></a>
           <a href="#next" class="lightbox-button lightbox-button-next"></a>
         </div>
         <div class="popup-image-container"></div>
+        <div class="popup-background"></div>
+      </div>
+    </div>
+
+    <div class="popup-container feedback-form-container--closed" id="feedback-form">
+      <div class="popup">
+        <div class="popup-form-container">
+          <form action="#">
+            <input type="text" required>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
         <div class="popup-background"></div>
       </div>
     </div>

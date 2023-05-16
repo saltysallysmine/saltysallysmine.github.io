@@ -1,9 +1,7 @@
-let popupContainer = document.querySelector("#image-preview");
-let popupImageContainer = popupContainer.querySelector(".popup-image-container");
+let popupImageContainer = document.querySelector(".popup-image-container");
+let popupContainer = document.querySelector(".popup-container");
 let popupBackground = popupContainer.querySelector(".popup-background");
 let popupButtons = popupContainer.querySelector(".popup-buttons");
-let popupButtonPrev = popupButtons.querySelector(".lightbox-button-prev");
-let popupButtonNext = popupButtons.querySelector(".lightbox-button-next");
 
 let popupOpened = false;
 let currentIndex = null;
