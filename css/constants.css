@@ -18,6 +18,7 @@ body {
   --gap-size: 15px;
   --num-cols: 3;
   --row-height: 300px;
+  --animation-duration: 1s;
   /* Current using colors. Additional theme is light */
   --text-color: var(--text-color-dark);
   --border-color: #272D2D;
