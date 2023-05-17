@@ -7,35 +7,37 @@ class FeedbackPopup {
     this.registerEventListeners();
   }
 
-  openPopup() {
+  openPopup = () => {
     this.isOpened = true;
-    this.container.classList.add("popup-container--opened");
+    this.container.classList.remove("feedback-form-container--closed");
+    this.container.classList.add("feedback-form-container--opened");
     this.background.classList.add("popup-background--opened");
   }
 
-  closePopup() {
+  closePopup = () => {
     this.isOpened = false;
-    this.container.classList.remove("popup-container--opened");
+    this.container.classList.add("feedback-form-container--closed");
+    this.container.classList.remove("feedback-form-container--opened");
     this.background.classList.remove("popup-background--opened");
   }
 
-  preventAndOpenPopup(event) {
+  preventAndOpenPopup = (event) => {
     event.preventDefault();
     this.openPopup();
   }
   
-  keyboardListener(event) {
+  keyboardListener = (event) => {
     let keyName = event.key;
     if (this.isOpened) {
       switch (keyName) {
         case "Escape":
-          closePopup();
+          this.closePopup();
           break;
       }
     }
   }
 
-  registerEventListeners() {
+  registerEventListeners = () => {
     this.openingLink.addEventListener('click', this.preventAndOpenPopup);
     document.addEventListener('keydown', this.keyboardListener);
     this.background.addEventListener('click', this.closePopup);
