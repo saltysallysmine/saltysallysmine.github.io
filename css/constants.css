@@ -26,6 +26,7 @@ body {
   --row-height: 300px;
   --row-height-full-screen: 70vh;
   --animation-duration: 1s;
+  --buttons-disappearance-duration: 2.5s;
   /* Current using colors. Additional theme is dark */
   --text-color: var(--text-color-light);
   --border-color: #272D2D;

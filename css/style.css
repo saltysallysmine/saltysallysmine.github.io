@@ -35,7 +35,6 @@ body {
   grid-template-columns: repeat(var(--num-cols-full-screen), 1fr);
 }
 
-
 .grid-section {
   display: flex;
   justify-content: center;
@@ -147,7 +146,6 @@ body {
   justify-content: center;
 }
 
-
 .popup-background--opened {
   position: absolute;
   top: 0;
@@ -173,7 +171,7 @@ body {
 }
 
 .lightbox-button-prev-image--opened {
-  animation: from-saturation-to-disappearance var(--animation-duration) ease forwards;
+  animation: from-saturation-to-disappearance var(--buttons-disappearance-duration) ease forwards;
   display: block;
   width: 200px;
   height: 200px;
