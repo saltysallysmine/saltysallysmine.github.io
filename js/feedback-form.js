@@ -11,6 +11,7 @@ class FeedbackPopup {
     this.isOpened = true;
     this.container.classList.remove("feedback-form-container--closed");
     this.container.classList.add("feedback-form-container--opened");
+    this.container.classList.add("popup-container--opened");
     this.background.classList.add("popup-background--opened");
   }
 

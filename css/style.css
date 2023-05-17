@@ -214,17 +214,28 @@ body {
 /* Section. Popup feedback form styles */
 
 .feedback-form-container {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
 }
 
 .feedback-form-container--opened {
   scale: 1;
+  border: 1px solid black;
+  margin: 0 auto;
 }
 
 .feedback-form-container--closed {
   scale: 0;
+}
+
+.popup-form-container {
+  min-width: 30vw;
+  text-align: center;
+  background-color: var(--background-card-color);
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -360,5 +371,4 @@ footer {
   padding-bottom: 10px;
   font-size: 1.5em;
 }
-
 
