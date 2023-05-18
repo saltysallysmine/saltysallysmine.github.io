@@ -42,10 +42,16 @@ body {
 }
 
 @media (max-width: 800px) {
+
   .grid-container {
     --num-cols: 2;
     --row-height: 270px;
   }
+
+  .grid-container--full-page {
+    --row-height-full-screen: auto;
+  }
+
 }
 
 @media (max-width: 1200px) {
