@@ -238,6 +238,24 @@ body {
   border: 1px solid black;
 }
 
+.form-item {
+  margin: 20px auto 0 auto;
+  max-width: 70%;
+}
+
+.hint {
+  font-style: italic;
+  color: var(--hint-color);
+}
+
+.error-message {
+    scale: 0;
+}
+
+.invalid-message-span {
+    scale: 1;
+}
+
 /* ------------------------------------------------------------------------- */
 /* Section. Representation styles */
 

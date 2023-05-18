@@ -1,9 +1,12 @@
 class FeedbackPopup {
 
-  constructor() {
+  constructor(form_index) {
     this.container = document.querySelector("#feedback-form");
+    this.form = this.container.querySelector(`#form-${form_index}`);
+    this.submitButton = this.form.querySelector("button[type=submit]");
     this.background = this.container.querySelector(".popup-background");
-    this.openingLink = document.querySelector("#feedback-opening-link"); this.isOpened = false;
+    this.openingLink = document.querySelector("#feedback-opening-link");
+    this.isOpened = false;
     this.registerEventListeners();
   }
 
@@ -42,9 +45,13 @@ class FeedbackPopup {
     this.openingLink.addEventListener('click', this.preventAndOpenPopup);
     document.addEventListener('keydown', this.keyboardListener);
     this.background.addEventListener('click', this.closePopup);
+    this.submitButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      console.log(1);
+    });
   }
 
 };
 
-let feedbackPopup = new FeedbackPopup();
+let feedbackPopup = new FeedbackPopup(1);
 

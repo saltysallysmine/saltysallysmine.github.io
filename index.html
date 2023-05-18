@@ -151,7 +151,7 @@
     <!-- Section. Footer -->
     <footer>
       <div class="feedback-form-link-container">
-        <a href="#" id="feedback-opening-link">Contact us!</a>
+        <a href="#" id="feedback-opening-link">Напишите нам!</a>
       </div>
       <div class="social-media-links">
         <p class="social-media-links__label"><i>Социальные сети Петра:</i></p>
@@ -194,12 +194,25 @@
     <div class="popup-container feedback-form-container feedback-form-container--closed" id="feedback-form">
       <div class="popup">
         <div class="popup-form-container">
-          <form action="#">
+          <form action="javascript:void(0);" id="form-1" method="post" name="article">
             <h2>Отзыв</h2>
-            <div class="full-feedback-input">
-              <input type="text" required>
+            <p class="form-item hint">Не бойтесь закрывать форму, прогресс сохранится, пока открыт сайт.</p>
+            <div class="form-item name-box">
+              <p>Ваше имя</p>
+              <input type="text" id="name" required pattern="[A-za-zА-Яа-я\-']+">
+              <div class="form-item error-message name-error"></div>
             </div>
-            <button type="submit">Отправить</button>
+            <div class="form-item email-box">
+              <p>Почта</p>
+              <input type="email" id="email" required>
+              <div class="form-item error-message email-error"></div>
+            </div>
+            <div class="form-item feedback-box" required>
+              <p>Обращение</p>
+              <textarea id="feedback" rows="5" cols="30" required></textarea>
+              <div class="form-item error-message feedback-error"></div>
+            </div>
+            <button type="submit" class="form-item submit-button">Отправить</button>
           </form>
         </div>
         <div class="popup-background"></div>
@@ -208,6 +221,7 @@
 
     <script src="./js/feedback-form.js"></script>
     <script src="./js/gallery.js"></script>
+    <script src="./js/form-validation.js"></script>
 
   </body>
 

@@ -19,6 +19,9 @@ body {
   /* body */
   --text-color-light: black;
   --text-color-dark: white;
+  /* hint */
+  --hint-color-light: black;
+  --hint-color-dark: white;
   /* for grid container */
   --gap-size: 15px;
   --num-cols: 3;
@@ -35,6 +38,7 @@ body {
   --background-content-color: var(--background-content-color-light); 
   --background-card-color: var(--background-card-color-light);
   --background-label-color: var(--background-label-color-light);
+  --hint-color: var(--hint-color-light);
 }
 
 @media (max-width: 800px) {
