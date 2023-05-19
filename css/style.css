@@ -134,7 +134,21 @@ body {
   }
 }
 
+.popup-container--closed {
+  position: absolute;
+  scale: 0;
+}
+
+.popup-label {
+  max-width: 70vw;
+  background-color: var(--background-card-color);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 .popup-container--opened {
+  scale: 1;
   animation: background-shading var(--animation-duration) forwards;
   position: fixed;
   width: 100vw;
