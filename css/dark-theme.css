@@ -1,0 +1,9 @@
+body {
+  --hint-color: white;
+  --text-color: white;
+  --background-body-color: #4a4e69;
+  --background-content-color: #787684; 
+  --background-card-color: #9a8c98;
+  --background-footer-color: #4a4e69; 
+  --background-label-color: rgba(92, 84, 112, 0.8);
+}

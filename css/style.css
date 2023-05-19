@@ -306,9 +306,15 @@ body {
 }
 
 .title-block {
+  display: flex;
+  justify-content: space-between;
   margin: 35px;
   padding: 10px;
   border-bottom: solid;
+}
+
+.theme-switcher {
+  border-radius: 10px;
 }
 
 .divider {

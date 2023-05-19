@@ -1,27 +1,6 @@
 /* TODO: text selection color */
 
 body {
-  /* body */
-  --background-body-color-light: #F6FFF8; 
-  --background-body-color-dark: #4a4e69;
-  /* content */
-  --background-content-color-light: #F6FFF8; 
-  --background-content-color-dark: #787684; 
-  /* cards */
-  --background-card-color-light: #eaf4f4;
-  --background-card-color-dark: #9a8c98;
-  /* footer */
-  --background-footer-color-light: #CCE3DE; 
-  --background-footer-color-dark: #4a4e69; 
-  /* label */
-  --background-label-color-light: rgba(253, 253, 251, 0.8); 
-  --background-label-color-dark: rgba(92, 84, 112, 0.8);
-  /* body */
-  --text-color-light: black;
-  --text-color-dark: white;
-  /* hint */
-  --hint-color-light: black;
-  --hint-color-dark: white;
   /* for grid container */
   --gap-size: 15px;
   --num-cols: 3;
@@ -31,14 +10,7 @@ body {
   --animation-duration: 1s;
   --buttons-disappearance-duration: 2.5s;
   /* Current using colors. Additional theme is dark */
-  --text-color: var(--text-color-light);
   --border-color: #272D2D;
-  --background-body-color: var(--background-body-color-light);
-  --background-footer-color: var(--background-footer-color-light);
-  --background-content-color: var(--background-content-color-light); 
-  --background-card-color: var(--background-card-color-light);
-  --background-label-color: var(--background-label-color-light);
-  --hint-color: var(--hint-color-light);
 }
 
 @media (max-width: 800px) {
