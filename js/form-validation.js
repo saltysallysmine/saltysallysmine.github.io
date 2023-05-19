@@ -38,6 +38,9 @@ class FormValidation {
   setRightButtonState = (inputList, button) => {
     button.disabled = false;
     inputList.forEach(input => {
+      if (input.required && input.value == '') {
+        button.disabled = true;
+      }
       if (!input.validity.valid) {
         button.disabled = true;
       }
@@ -46,7 +49,7 @@ class FormValidation {
 
   isValid = (form, input) => {
     // check if we need to disable button
-    const inputList = form.querySelectorAll('input');
+    const inputList = form.querySelectorAll('input, textarea');
     const button = form.querySelector('button[type="submit"]');
     this.setRightButtonState(inputList, button);
     // check input validity
@@ -63,7 +66,7 @@ class FormValidation {
   }
 
   setInputEventListenter = (form) => {
-    const inputList = form.querySelectorAll('input');
+    const inputList = form.querySelectorAll('input, textarea');
     const button = form.querySelector('button[type="submit"]');
     this.setRightButtonState(inputList, button);
     inputList.forEach(input => {

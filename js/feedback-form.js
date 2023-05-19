@@ -45,9 +45,14 @@ class FeedbackPopup {
     this.openingLink.addEventListener('click', this.preventAndOpenPopup);
     document.addEventListener('keydown', this.keyboardListener);
     this.background.addEventListener('click', this.closePopup);
-    this.submitButton.addEventListener('click', (event) => {
+    this.submitButton.addEventListener('click', async (event) => {
       event.preventDefault();
-      console.log(1);
+      this.submitButton.disabled = true;
+      this.submitButton.textContent = "Отправка, подождите";
+      await new Promise(_ => setTimeout(_, 3000));
+      this.submitButton.textContent = "Отправлено! Спасибо :)";
+      await new Promise(_ => setTimeout(_, 2000));
+      this.closePopup();
     });
   }
 
