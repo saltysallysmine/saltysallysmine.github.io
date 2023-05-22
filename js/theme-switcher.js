@@ -9,8 +9,10 @@ class ThemeSwitcher {
 
   buttonCLick = () => {
     if (this.lightTheme) {
+      this.button.textContent = "Светлая тема";
       this.cssLink.href = this.cssLink.href.replace('light', 'dark')
     } else {
+      this.button.textContent = "Тёмная тема";
       this.cssLink.href = this.cssLink.href.replace('dark', 'light')
     }
     this.lightTheme = !this.lightTheme;
