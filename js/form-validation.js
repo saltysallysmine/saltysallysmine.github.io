@@ -55,7 +55,10 @@ class FormValidation {
     // check input validity
     if (!input.validity.valid) {
       const errorKey = Object.keys(this.errors).find(el => input.validity[el]);
-      const message = this.errors[errorKey] || input.validationMessage;
+      let message = this.errors[errorKey] || input.validationMessage;
+      if (input.type === 'email') {
+        message = this.errors['typeMismatch'];
+      }
       this.showInputError(form, input, message);
     } else {
       this.hideInputError(form, input);
