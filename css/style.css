@@ -378,7 +378,7 @@ body {
 
 @media(max-width: 800px) {
   .rain-drop--falling {
-    animation: none;
+    scale: 0;
   }
 }
 
@@ -396,9 +396,6 @@ footer {
 .footer-buttons-container {
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.footer-buttons-container {
   display: flex;
   justify-content: space-around;
 }
@@ -451,4 +448,19 @@ footer {
 
 .link-to-icon-block {
   padding-bottom: 10px;
+}
+
+@media(max-width: 800px) {
+
+  .footer-buttons-container {
+    display: block;
+  }
+
+  .rain-button {
+    scale: 0;
+    padding: 0;
+    margin: 0;
+    border: 0px;
+  }
+
 }
